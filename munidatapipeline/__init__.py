@@ -1,1 +1,1 @@
-from munidatapipeline import *
+from munidatapipeline import muni_data_pipe
