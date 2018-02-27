@@ -3,10 +3,13 @@ import sys
 import os
 import multiprocessing
 from multiprocessing import Pipe
-import munidatapipeline.core.options as opts
-import munidatapipeline.core.prefab as prefab
-import core.download as download
+try :
+    from munidatapipeline.core import options as opts
 
+    from .core import prefab
+    from core import * 
+except Exception as e:
+    pass
 
 class muni_data_pipe:
     """TODO: Docstring"""
