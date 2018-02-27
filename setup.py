@@ -8,7 +8,7 @@ setup(name='munidatapipeline',
       author='Charles Landau, Andrew Gobbi',
       author_email='munidatapipelinedevelopment@gmail.com',
       url='https://github.com/mdp-dev/munidatapipeline',
-      download_url = 'https://github.com/mdp-dev/munidatapipeline/archive/0.1.tar.gz'
+      download_url = 'https://github.com/mdp-dev/munidatapipeline/archive/0.1.tar.gz',
       keywords=['munidatapipeline', 'ETL', 'multiprocessing'],
      )
 
