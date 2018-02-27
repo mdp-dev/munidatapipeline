@@ -219,11 +219,10 @@ class muni_data_pipe:
                 "chunks must be list, tuple or str, not {}".format(
                 type(chunks).__name__))
 
-        while len(chunks)>0:
+        for i in len(chunks):
             if self.opts.loud == True:
                 print("\nMoving to next chunk: "
-                      "\n{} chunks remaining\n".format(len(chunks)))
-            next_chunk = chunks.pop()    
-            self.scheduler(chunk=next_chunk)
+                      "\n on chunk number {}\n".format(i))    
+            self.scheduler(chunk=chunks[i])
             
         
