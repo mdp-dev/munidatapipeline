@@ -220,11 +220,10 @@ class muni_data_pipe:
                 type(chunks).__name__))
 
         while len(chunks)>0:
-
             if self.opts.loud == True:
                 print("\nMoving to next chunk: "
                       "\n{} chunks remaining\n".format(len(chunks)))
-                
-            self.scheduler(chunk=chunks.pop())
+            next_chunk = chunks.pop()    
+            self.scheduler(chunk=next_chunk)
             
         
