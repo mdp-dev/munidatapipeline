@@ -11,9 +11,9 @@ except Exception as e:
     
     pass
 
-import prefab
-import options as opts
-import download
+import core.prefab
+import core.options as opts
+import core.download
 
 class muni_data_pipe:
     """TODO: Docstring"""

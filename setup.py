@@ -3,7 +3,7 @@
 from setuptools import setup
 
 setup(name='munidatapipeline',
-      version='00.01.0731',
+      version='00.01.0732',
       description='An ETL tool for working with municipal open data (especially GiS data) on resource constrained systems.',
       author='Charles Landau, Andrew Gobbi',
       author_email='munidatapipelinedevelopment@gmail.com',
