@@ -3,8 +3,8 @@ import sys
 import os
 import multiprocessing
 from multiprocessing import Pipe
-import core.options as opts
-import core.prefab as prefab
+import munidatapipeline.core.options as opts
+import munidatapipeline.core.prefab as prefab
 import core.download as download
 
 
