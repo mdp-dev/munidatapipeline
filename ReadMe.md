@@ -29,6 +29,6 @@ Plus:
 All countributions are welcome as we continue to report and fix bugs, improve documentation, and look to improve overall usuability. 
 
 If you have any suggestions, we strongly encourage you to get in touch via email or: 
-1. Clone the repository (git clone https://github.com/munidatadevelopmentpipeliner)
+1. Clone the repository (git clone <https://github.com/mdp-dev/munidatapipeline>)
 2. Raise an issue or create a new branch with your issue request and changes 
 3. Submit a pull request with your issue name and date 

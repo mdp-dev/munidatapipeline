@@ -1,1 +1,1 @@
-__all__ = ['options', 'prefab', 'download']
+__all__ = ['options', 'prefab', 'download', 'cities']
