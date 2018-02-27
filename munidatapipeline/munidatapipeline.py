@@ -3,12 +3,14 @@ import sys
 import os
 import multiprocessing
 from multiprocessing import Pipe
-try :
-    from munidatapipeline.core import options as opts
+import prefab
+import options as opts
+import download
 
-    from .core import prefab
-    from core import * 
+try:
+    from core import *
 except Exception as e:
+    
     pass
 
 class muni_data_pipe:

@@ -9,5 +9,5 @@ setup(name='munidatapipeline',
       author_email='munidatapipelinedevelopment@gmail.com',
       url='https://github.com/mdp-dev/munidatapipeline',
       keywords=['munidatapipeline', 'ETL', 'multiprocessing'],
-      packages=['munidatapipeline', 'core'],
+      packages=['munidatapipeline'],
      )
