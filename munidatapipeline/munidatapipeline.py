@@ -60,6 +60,10 @@ class muni_data_pipe:
         
         if not chunk:
             chunk = self.opts.chunk
+            if self.opts.loud:
+                print(
+                    'Using default chunk, {}.'.format(chunk))
+            
         
         
         sched_copy = [i for i in sched]
@@ -71,14 +75,17 @@ class muni_data_pipe:
             scheduled_func, message = sched_copy.pop()
             
             #The user must define chunk somewhere
+            if chunk:
+                message['chunk'] = chunk
             if 'chunk' in message:
                 pass
-            elif chunk:
-                message['chunk'] = chunk
             else:
                 raise ValueError(
             "The scheduler needs to know which chunk of data to use."
              )
+            
+            if self.opts.loud:
+                print("scheduler using chunk: ", message['chunk'])
 
             #Spawn the process and pass the connection, data and message to it
             if message:
@@ -176,11 +183,6 @@ class muni_data_pipe:
             #Not yet implemented
             if self.load == 'SQLite':
                 raise ValueError("SQLite is not currently supported")
-
-            
-            
-            #Join the process and move on
-            
             
             if self.opts.loud:
                 print(
