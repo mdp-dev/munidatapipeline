@@ -1,0 +1,4 @@
+**/data
+*.pyc
+munidatapipeline.egg-info/
+
